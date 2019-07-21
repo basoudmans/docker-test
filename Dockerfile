@@ -21,7 +21,9 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     wget http://s3.amazonaws.com/cmsms/downloads/14356/cmsms-2.2.10-install.zip && \
     unzip cmsms-2.2.10-install.zip && \
     mv cmsms-2.2.10-install.php index.php && \
-    rm cmsms-2.2.10-install.zip
+    rm cmsms-2.2.10-install.zip && \
+    touch v2.html
+
 
 
 COPY ./entrypoint.sh /entrypoint.sh
