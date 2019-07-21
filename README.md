@@ -1,6 +1,6 @@
 # Docker test image
 
-An image running [ubuntu/18.04](https://hub.docker.com/_/ubuntu/) Linux and [Spotweb](https://github.com/spotweb/spotweb).
+An image running [ubuntu/18.04](https://hub.docker.com/_/ubuntu/) Linux and [Apache](https://httpd.apache.org/).
 
 ## Requirements
 

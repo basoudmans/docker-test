@@ -18,3 +18,9 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     rm -rf /var/lib/apt/lists/* && \
     rm -r /var/www/html && \
     rm -rf /tmp/*
+
+COPY ./entrypoint.sh /entrypoint.sh
+RUN chmod u+x /entrypoint.sh
+EXPOSE 80
+
+ENTRYPOINT ["/entrypoint.sh"]
