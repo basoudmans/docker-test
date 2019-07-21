@@ -16,7 +16,7 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
-    rm -rf /tmp/*
+    rm -rf /tmp/* && \
     cd /var/www/html/ && \
     wget http://s3.amazonaws.com/cmsms/downloads/14356/cmsms-2.2.10-install.zip && \
     unzip cmsms-2.2.10-install.zip && \
